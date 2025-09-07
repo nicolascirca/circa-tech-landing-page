@@ -1,25 +1,507 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Circa-Tech | Consultoría en Software, Datos e IA</title>
-    <meta name="description" content="Circa-Tech - Tu partner tecnológico. Ingeniería de software, sensores remotos, bases de datos y IA generativa para impulsar tus operaciones con soluciones ágiles y seguras." />
-    <meta name="author" content="Circa-Tech" />
-    <meta name="keywords" content="consultoría software, ingeniería de datos, sensores remotos, machine learning, IA generativa, desarrollo ágil, Chile" />
-
-    <meta property="og:title" content="Circa-Tech | Consultoría en Software, Datos e IA" />
-    <meta property="og:description" content="Circa-Tech - Tu partner tecnológico. Ingeniería de software, sensores remotos, bases de datos y IA generativa para impulsar tus operaciones con soluciones ágiles y seguras." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
-
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Force browsers to not cache during development -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Circa-Tech | Consultoría en Software, Datos e IA - Tu Partner Tecnológico en Chile</title>
+    <meta name="description" content="Circa-Tech - Tu partner tecnológico. Ingeniería de software, sensores remotos, bases de datos y IA generativa para impulsar tus operaciones con soluciones ágiles y seguras. Expertos en desarrollo de software personalizado en Santiago, Chile.">
+    <meta name="keywords" content="consultoría software, ingeniería de datos, sensores remotos, machine learning, IA generativa, desarrollo ágil, Chile, Santiago, inteligencia artificial, bases de datos, gestión de proyectos, computer vision">
+    <meta name="author" content="Circa-Tech">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://circa-tech.cl">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://circa-tech.cl">
+    <meta property="og:title" content="Circa-Tech | Consultoría en Software, Datos e IA">
+    <meta property="og:description" content="Tu partner tecnológico. Ingeniería de software, sensores remotos, bases de datos y IA generativa para impulsar tus operaciones con soluciones ágiles y seguras.">
+    <meta property="og:image" content="https://circa-tech.cl/assets/torres-del-paine.jpg">
+    <meta property="og:locale" content="es_CL">
+    <meta property="og:site_name" content="Circa-Tech">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://circa-tech.cl">
+    <meta property="twitter:title" content="Circa-Tech | Consultoría en Software, Datos e IA">
+    <meta property="twitter:description" content="Tu partner tecnológico. Ingeniería de software, sensores remotos, bases de datos y IA generativa.">
+    <meta property="twitter:image" content="https://circa-tech.cl/assets/torres-del-paine.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon.ico">
+    
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ITConsultingService",
+        "name": "Circa-Tech",
+        "description": "Consultoría especializada en ingeniería de software, gestión de datos, sensores remotos y IA generativa",
+        "url": "https://circa-tech.cl",
+        "logo": "https://circa-tech.cl/favicon.ico",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+56 9 7579 8949",
+            "contactType": "sales",
+            "email": "contacto@circa-tech.cl",
+            "areaServed": "CL",
+            "availableLanguage": ["Spanish", "English"]
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Santiago",
+            "addressCountry": "CL"
+        },
+        "sameAs": [],
+        "knowsAbout": [
+            "Ingeniería de Software",
+            "Machine Learning",
+            "Inteligencia Artificial",
+            "Bases de Datos",
+            "Sensores Remotos",
+            "Gestión de Proyectos",
+            "IA Generativa",
+            "Computer Vision"
+        ],
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Servicios de Consultoría Tecnológica",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Ingeniería de Software y Gestión de Proyectos",
+                        "description": "Desarrollo de soluciones tecnológicas innovadoras para optimizar procesos empresariales"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Sensores Remotos",
+                        "description": "Análisis de imágenes satelitales y computer vision para obtener insights valiosos"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Bases de Datos e Ingeniería de Datos",
+                        "description": "Servicios completos de bases de datos y gestión de datos"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Machine Learning e IA Generativa",
+                        "description": "Integración de modelos de machine learning e IA generativa"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main" class="skip-link">Saltar al contenido principal</a>
+    
+    <!-- Header -->
+    <header class="header">
+        <nav class="container nav-container" aria-label="Navegación principal">
+            <div class="nav-brand">
+                <h1 class="brand-title">circa-tech</h1>
+            </div>
+            <button class="nav-toggle" aria-label="Abrir menú de navegación" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#hero" class="nav-link">Inicio</a></li>
+                <li><a href="#services" class="nav-link">Servicios</a></li>
+                <li><a href="#process" class="nav-link">Proceso</a></li>
+                <li><a href="#contact" class="nav-link">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Main Content -->
+    <main id="main">
+        <!-- Hero Section with Carousel -->
+        <section id="hero" class="hero-section" aria-label="Presentación">
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/torres-del-paine.jpg" alt="Torres del Paine National Park, Patagonia Chile" loading="eager">
+                        <div class="carousel-overlay"></div>
+                        <div class="carousel-caption">Torres del Paine</div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/valle-de-la-luna.jpg" alt="Valle de la Luna, Atacama Desert Chile" loading="lazy">
+                        <div class="carousel-overlay"></div>
+                        <div class="carousel-caption">Valle de la Luna</div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/valdivian-forest.jpg" alt="Valdivian Temperate Rainforest Chile" loading="lazy">
+                        <div class="carousel-overlay"></div>
+                        <div class="carousel-caption">Bosque Valdiviano</div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/portada-antofagasta.jpg" alt="La Portada Natural Monument, Antofagasta Chile" loading="lazy">
+                        <div class="carousel-overlay"></div>
+                        <div class="carousel-caption">Portada de Antofagasta</div>
+                    </div>
+                </div>
+                
+                <button class="carousel-control prev" aria-label="Imagen anterior">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                </button>
+                <button class="carousel-control next" aria-label="Siguiente imagen">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </button>
+                
+                <div class="carousel-indicators">
+                    <button class="indicator active" aria-label="Ir a imagen 1" data-slide="0"></button>
+                    <button class="indicator" aria-label="Ir a imagen 2" data-slide="1"></button>
+                    <button class="indicator" aria-label="Ir a imagen 3" data-slide="2"></button>
+                    <button class="indicator" aria-label="Ir a imagen 4" data-slide="3"></button>
+                </div>
+            </div>
+            
+            <div class="hero-content">
+                <div class="container">
+                    <h2 class="hero-title">circa-tech</h2>
+                    <p class="hero-description">
+                        Tu partner tecnológico. Ingeniería de software, datos, sensores remotos y IA generativa 
+                        para impulsar tus operaciones con soluciones ágiles y seguras.
+                    </p>
+                    <a href="#services" class="btn btn-primary">Conoce Nuestros Servicios</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Services Section -->
+        <section id="services" class="services-section" aria-label="Nuestros servicios">
+            <div class="container">
+                <h2 class="section-title">Nuestros Servicios</h2>
+                
+                <div class="services-grid">
+                    <article class="service-card">
+                        <div class="service-image">
+                            <img src="assets/software-team.jpg" alt="Equipo desarrollando software" loading="lazy">
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Ingeniería de Software y Gestión de Proyectos</h3>
+                            <p class="service-description">
+                                Nuestro equipo de ingeniería de software desarrolla soluciones tecnológicas innovadoras para optimizar procesos empresariales. Desde aplicaciones personalizadas hasta sistemas de gestión empresarial, abordamos desafíos complejos con soluciones robustas y escalables. Además, facilitamos la implementación de soluciones tecnológicas gestionando las relaciones con las partes interesadas, asegurando que los proyectos se entreguen a tiempo y con los más altos estándares de calidad.
+                            </p>
+                        </div>
+                    </article>
+                    
+                    <article class="service-card">
+                        <div class="service-image">
+                            <img src="assets/satellite.jpg" alt="Satélite capturando imágenes de la Tierra" loading="lazy">
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Sensores Remotos</h3>
+                            <p class="service-description">
+                                En Circa, aprovechamos imágenes satelitales y técnicas avanzadas de computer vision para obtener insights valiosos. Realizamos segmentación semántica, supervisada y no supervisada, y aplicamos modelos de computer vision para diversos análisis. Transformamos datos complejos en información útil, adaptada a las necesidades específicas de cada cliente.
+                            </p>
+                        </div>
+                    </article>
+                    
+                    <article class="service-card">
+                        <div class="service-image">
+                            <img src="assets/database.jpg" alt="Diagrama de bases de datos" loading="lazy">
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Bases de Datos e Ingeniería de Datos</h3>
+                            <p class="service-description">
+                                Proporcionamos servicios completos de bases de datos y gestión de datos, asegurando su integridad, disponibilidad y seguridad. Nuestras soluciones permiten extraer información valiosa para la toma de decisiones estratégicas, gestionando grandes volúmenes de datos de manera eficiente y segura.
+                            </p>
+                        </div>
+                    </article>
+                    
+                    <article class="service-card">
+                        <div class="service-image">
+                            <img src="assets/ai-ml.jpg" alt="Gráfica que muestra IA generativa" loading="lazy">
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Machine Learning e IA Generativa</h3>
+                            <p class="service-description">
+                                Integramos modelos de machine learning e IA generativa para automatizar tareas, mejorar la personalización de servicios y generar contenido creativo. Trabajamos estrechamente con los clientes para desarrollar modelos que se integren perfectamente en sus sistemas, aportando valor real y tangible.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Process Section -->
+        <section id="process" class="process-section" aria-label="Nuestro proceso">
+            <div class="container">
+                <h2 class="section-title">Nuestro Proceso</h2>
+                
+                <div class="process-header">
+                    <h3 class="process-subtitle">Circa-Tech, tu partner tecnológico.</h3>
+                    <p class="process-description">
+                        Ingeniería de software, datos, sensores remotos y IA generativa para impulsar 
+                        tus operaciones con soluciones ágiles y seguras.
+                    </p>
+                </div>
+                
+                <div class="process-grid">
+                    <div class="process-card">
+                        <div class="process-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="m21 21-4.35-4.35"></path>
+                            </svg>
+                        </div>
+                        <div class="process-step">Paso 1</div>
+                        <h3 class="process-title">Reunión de descubrimiento</h3>
+                        <p class="process-text">Definimos objetivos, métricas y restricciones del proyecto.</p>
+                    </div>
+                    
+                    <div class="process-card">
+                        <div class="process-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                <polyline points="10 9 9 9 8 9"></polyline>
+                            </svg>
+                        </div>
+                        <div class="process-step">Paso 2</div>
+                        <h3 class="process-title">Análisis y propuesta</h3>
+                        <p class="process-text">Convertimos requisitos en alcance, presupuesto y cronograma claros.</p>
+                    </div>
+                    
+                    <div class="process-card">
+                        <div class="process-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="3"></circle>
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="12" y1="2" x2="12" y2="6"></line>
+                                <line x1="12" y1="18" x2="12" y2="22"></line>
+                                <line x1="4.93" y1="4.93" x2="7.76" y2="7.76"></line>
+                                <line x1="16.24" y1="16.24" x2="19.07" y2="19.07"></line>
+                                <line x1="2" y1="12" x2="6" y2="12"></line>
+                                <line x1="18" y1="12" x2="22" y2="12"></line>
+                                <line x1="4.93" y1="19.07" x2="7.76" y2="16.24"></line>
+                                <line x1="16.24" y1="7.76" x2="19.07" y2="4.93"></line>
+                            </svg>
+                        </div>
+                        <div class="process-step">Paso 3</div>
+                        <h3 class="process-title">Diseño de arquitectura</h3>
+                        <p class="process-text">Elegimos tecnologías y trazamos la solución end-to-end.</p>
+                    </div>
+                    
+                    <div class="process-card">
+                        <div class="process-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                        </div>
+                        <div class="process-step">Paso 4</div>
+                        <h3 class="process-title">Desarrollo ágil</h3>
+                        <p class="process-text">Iteramos en sprints con entregables verificables y feedback continuo.</p>
+                    </div>
+                    
+                    <div class="process-card">
+                        <div class="process-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                        </div>
+                        <div class="process-step">Paso 5</div>
+                        <h3 class="process-title">Pruebas y despliegue</h3>
+                        <p class="process-text">Garantizamos calidad y seguridad antes de lanzar a producción.</p>
+                    </div>
+                    
+                    <div class="process-card">
+                        <div class="process-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="12" y1="20" x2="12" y2="10"></line>
+                                <line x1="18" y1="20" x2="18" y2="4"></line>
+                                <line x1="6" y1="20" x2="6" y2="16"></line>
+                            </svg>
+                        </div>
+                        <div class="process-step">Paso 6</div>
+                        <h3 class="process-title">Monitoreo y mejora continua</h3>
+                        <p class="process-text">Supervisamos métricas, resolvemos incidencias y evolucionamos la solución.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section" aria-label="Contacto">
+            <div class="container">
+                <div class="contact-header">
+                    <h2 class="section-title section-title-white">Hablemos de tu proyecto</h2>
+                    <p class="contact-subtitle">
+                        ¿Tienes un desafío tecnológico? Estamos aquí para ayudarte a
+                        encontrar la solución perfecta.
+                    </p>
+                </div>
+                
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3 class="contact-info-title">Información de Contacto</h3>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                                    <path d="m22 7-10 5L2 7"></path>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <p class="contact-label">Email</p>
+                                <a href="mailto:contacto@circa-tech.cl" class="contact-value">contacto@circa-tech.cl</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <p class="contact-label">Teléfono</p>
+                                <a href="tel:+56975798949" class="contact-value">+56 9 7579 8949</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <p class="contact-label">Ubicación</p>
+                                <p class="contact-value">Santiago, Chile</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-benefits">
+                            <h4 class="benefits-title">¿Por qué elegirnos?</h4>
+                            <ul class="benefits-list">
+                                <li>Experiencia en tecnologías de vanguardia</li>
+                                <li>Enfoque ágil y orientado a resultados</li>
+                                <li>Soluciones escalables y robustas</li>
+                                <li>Soporte técnico especializado</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-container">
+                        <form class="contact-form" id="contactForm" novalidate>
+                            <div class="form-group">
+                                <label for="name" class="form-label">Nombre *</label>
+                                <input type="text" id="name" name="name" class="form-input" placeholder="Tu nombre completo" required>
+                                <span class="form-error" role="alert"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email *</label>
+                                <input type="email" id="email" name="email" class="form-input" placeholder="tu@empresa.com" required>
+                                <span class="form-error" role="alert"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="company" class="form-label">Empresa</label>
+                                <input type="text" id="company" name="company" class="form-input" placeholder="Nombre de tu empresa">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message" class="form-label">Mensaje *</label>
+                                <textarea id="message" name="message" class="form-textarea" rows="6" placeholder="Cuéntanos sobre tu proyecto o necesidad tecnológica..." required></textarea>
+                                <span class="form-error" role="alert"></span>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-submit">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                </svg>
+                                Enviar Mensaje
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h2 class="footer-title">circa-tech</h2>
+                    <p class="footer-description">Tu partner tecnológico</p>
+                </div>
+                <div class="footer-links">
+                    <h3 class="footer-heading">Enlaces rápidos</h3>
+                    <ul>
+                        <li><a href="#services">Servicios</a></li>
+                        <li><a href="#process">Proceso</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3 class="footer-heading">Contacto</h3>
+                    <p><a href="mailto:contacto@circa-tech.cl">contacto@circa-tech.cl</a></p>
+                    <p><a href="tel:+56975798949">+56 9 7579 8949</a></p>
+                    <p>Santiago, Chile</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Circa-Tech. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Toast Notification -->
+    <div id="toast" class="toast" role="alert" aria-live="polite" aria-atomic="true">
+        <div class="toast-content">
+            <span class="toast-message"></span>
+            <button class="toast-close" aria-label="Cerrar notificación">&times;</button>
+        </div>
+    </div>
+    
+    <!-- Scripts -->
+    <script src="script.js" defer></script>
+</body>
 </html>
