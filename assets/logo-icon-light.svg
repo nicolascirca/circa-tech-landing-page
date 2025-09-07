@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="220 150 200 180" width="200" height="180">
+  <defs>
+    <linearGradient id="circaGradientLight" gradientUnits="userSpaceOnUse" x1="272.7366" y1="291.7271" x2="393.9014" y2="169.2659">
+      <stop offset="0.1315" style="stop-color: #4a5568" />
+      <stop offset="0.2427" style="stop-color: #5a6578" />
+      <stop offset="0.3389" style="stop-color: #6a7588" />
+      <stop offset="0.4296" style="stop-color: #7a8598" />
+      <stop offset="0.5169" style="stop-color: #8a95a8" />
+      <stop offset="0.6017" style="stop-color: #9aa5b8" />
+      <stop offset="0.6848" style="stop-color: #aab5c8" />
+      <stop offset="0.7649" style="stop-color: #a0d8f0" />
+      <stop offset="0.7881" style="stop-color: #90e0ff" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Main cube shape -->
+  <polygon fill="url(#circaGradientLight)" points="250.28,200.23 250.28,283.27 322.18,324.78 394.09,283.27 394.09,200.23 322.18,158.72" />
+  <polygon fill="none" stroke="#ffffff" stroke-width="4" stroke-miterlimit="10" points="250.28,200.23 250.28,283.27 322.18,324.78 394.09,283.27 394.09,200.23 322.18,158.72" />
+  
+  <!-- Cube internal lines -->
+  <polyline fill="none" stroke="#ffffff" stroke-width="4" stroke-miterlimit="10" points="394.09,200.23 322.18,241.75 250.28,200.23" />
+  <line fill="none" stroke="#ffffff" stroke-width="4" stroke-miterlimit="10" x1="322.18" y1="241.75" x2="322.18" y2="324.78" />
+  <polyline fill="none" stroke="#ffffff" stroke-width="4" stroke-miterlimit="10" points="250.28,241.75 322.18,281.5 394.09,241.75" />
+  <polyline fill="none" stroke="#ffffff" stroke-width="4" stroke-miterlimit="10" points="288.31,178.28 358.14,220.99 358.14,304.02" />
+  <polyline fill="none" stroke="#ffffff" stroke-width="4" stroke-miterlimit="10" points="285.59,303.07 285.59,220.04 357.06,178.28" />
+  
+  <!-- Orbit and dot -->
+  <path fill="none" stroke="#90e0ff" stroke-width="4" stroke-miterlimit="10" d="M337.02,167.28c36.54-7.89,67.07-2.32,74.82,16.01c10.17,24.04-22.7,60.93-73.42,82.39S238.34,285.04,228.16,261c-5.9-13.94,2.68-32.21,20.82-49.28" />
+  <line fill="none" stroke="#ffffff" stroke-width="4" stroke-miterlimit="10" x1="322.18" y1="158.72" x2="343.42" y2="170.98" />
+  <line fill="none" stroke="#ffffff" stroke-width="4" stroke-miterlimit="10" x1="249.28" y1="203.62" x2="249.28" y2="222.15" />
+  <circle fill="#ffffff" cx="369.59" cy="164.22" r="9" />
+</svg>
