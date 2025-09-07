@@ -65,8 +65,9 @@
     />
 
     <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/logo-icon.svg" />
 
     <!-- Preconnect to external resources -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -89,7 +90,7 @@
         "name": "Circa-Tech",
         "description": "Consultoría especializada en ingeniería de software, gestión de datos, sensores remotos y IA generativa",
         "url": "https://circa-tech.cl",
-        "logo": "https://circa-tech.cl/favicon.ico",
+        "logo": "https://circa-tech.cl/assets/logo.png",
         "contactPoint": {
           "@type": "ContactPoint",
           "telephone": "+56 9 7579 8949",
@@ -162,9 +163,9 @@
     <!-- Header -->
     <header class="header">
       <nav class="container nav-container" aria-label="Navegación principal">
-        <div class="nav-brand">
-          <h1 class="brand-title">circa-tech</h1>
-        </div>
+        <a href="#hero" class="nav-brand" aria-label="Circa-Tech - Inicio">
+          <img src="assets/logo.png" alt="Circa-Tech Logo" class="nav-logo" />
+        </a>
         <button
           class="nav-toggle"
           aria-label="Abrir menú de navegación"
@@ -173,7 +174,7 @@
           <span class="hamburger"></span>
         </button>
         <ul class="nav-menu">
-          <li><a href="#hero" class="nav-link">Inicio</a></li>
+          <!-- <li><a href="#hero" class="nav-link">Inicio</a></li> -->
           <li><a href="#services" class="nav-link">Servicios</a></li>
           <li><a href="#process" class="nav-link">Proceso</a></li>
           <li><a href="#contact" class="nav-link">Contacto</a></li>
@@ -574,6 +575,9 @@
 
           <div class="contact-grid">
             <div class="contact-info">
+              <!-- <div class="contact-logo-section">
+                <img src="assets/logo-icon.svg" alt="Circa-Tech" class="contact-logo">
+              </div> -->
               <h3 class="contact-info-title">Información de Contacto</h3>
 
               <div class="contact-item">
@@ -732,6 +736,11 @@
       <div class="container">
         <div class="footer-content">
           <div class="footer-brand">
+            <img
+              src="assets/logo-icon.svg"
+              alt="Circa-Tech"
+              class="footer-logo"
+            />
             <h2 class="footer-title">circa-tech</h2>
             <p class="footer-description">Tu partner tecnológico</p>
           </div>

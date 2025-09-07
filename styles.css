@@ -97,11 +97,21 @@ body {
     padding-bottom: 1rem;
 }
 
-.brand-title {
-    font-size: 1.75rem;
-    font-weight: 700;
-    color: var(--primary-navy);
+.nav-brand {
+    display: flex;
+    align-items: center;
     text-decoration: none;
+    transition: var(--transition-smooth);
+}
+
+.nav-brand:hover {
+    transform: translateY(-2px);
+}
+
+.nav-logo {
+    height: 45px;
+    width: auto;
+    object-fit: contain;
 }
 
 .nav-toggle {
@@ -585,6 +595,18 @@ body {
     color: white;
 }
 
+.contact-logo-section {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.contact-logo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+}
+
 .contact-benefits {
     margin-top: 2rem;
     padding-top: 2rem;
@@ -693,6 +715,13 @@ body {
     grid-template-columns: 2fr 1fr 1fr;
     gap: 3rem;
     margin-bottom: 2rem;
+}
+
+.footer-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 1rem;
 }
 
 .footer-title {

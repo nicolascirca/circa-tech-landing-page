@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <defs>
+    <linearGradient id="faviconGradient" gradientUnits="userSpaceOnUse" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color: #171d29" />
+      <stop offset="50%" style="stop-color: #416e82" />
+      <stop offset="100%" style="stop-color: #70c9e7" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Simplified cube for small size -->
+  <g transform="scale(0.18) translate(-220, -150)">
+    <polygon fill="url(#faviconGradient)" points="250.28,200.23 250.28,283.27 322.18,324.78 394.09,283.27 394.09,200.23 322.18,158.72" />
+    <polygon fill="none" stroke="#ffffff" stroke-width="6" stroke-miterlimit="10" points="250.28,200.23 250.28,283.27 322.18,324.78 394.09,283.27 394.09,200.23 322.18,158.72" />
+    <polyline fill="none" stroke="#ffffff" stroke-width="6" stroke-miterlimit="10" points="394.09,200.23 322.18,241.75 250.28,200.23" />
+    <line fill="none" stroke="#ffffff" stroke-width="6" stroke-miterlimit="10" x1="322.18" y1="241.75" x2="322.18" y2="324.78" />
+    <path fill="none" stroke="#70c9e7" stroke-width="6" stroke-miterlimit="10" d="M337.02,167.28c36.54-7.89,67.07-2.32,74.82,16.01c10.17,24.04-22.7,60.93-73.42,82.39S238.34,285.04,228.16,261c-5.9-13.94,2.68-32.21,20.82-49.28" />
+    <circle fill="#232f3c" cx="369.59" cy="164.22" r="12" />
+  </g>
+</svg>
