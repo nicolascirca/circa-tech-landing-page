@@ -826,6 +826,10 @@ body {
   .nav-toggle {
     display: block;
   }
+  
+  .carousel-control {
+    display: none;
+  }
 
   .nav-menu {
     position: fixed;
